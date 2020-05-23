@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
-const user = 'teste';
-const password = 'teste';
+const user = 'teste2';
+const password = 'teste2';
 const url = 'url';
 
 const connection = mongoose.connect(`mongodb+srv://${user}:${password}@${url}`, {
