@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const user = '';
-const password = '';
-const url = '';
+const user = 'paehrces';
+const password = '147963';
+const url = 'paehrces-mbfek.mongodb.net/paehrces?retryWrites=true&w=majority';
 
 const connection = mongoose.connect(`mongodb+srv://${user}:${password}@${url}`, {
     useUnifiedTopology: true,
