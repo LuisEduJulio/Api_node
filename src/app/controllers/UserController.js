@@ -2,18 +2,21 @@ const User = require('../models/User');
 
 class UserController{
     //GET
+    // users
     async index(req, res){
         const users = await User.find({});
 
         return res.json(users)
     }
     //POST
+    // users
     async store(req, res){
         const user = await User.create(req.body);
 
         return res.json({user:user.getJson()})
     }
     //PUT
+    //users/:{id}
     async update(req, res){
         const {name, email, password, role} = req.body
 
@@ -43,6 +46,7 @@ class UserController{
     }
 
     //DELETE
+    // users/:{id}
     async destroy(req, res){
         const user = await User.findById(req.params.id);
 
